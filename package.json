@@ -1,0 +1,24 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "1.0.0",
+  "description": "My starting point for all new frontend projects. Out of the box: Gulp (SCSS, JS, Image compression, livereload), Bootstrap, jQuery & Modernizr",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Bryce York <bryce@meetbryce.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "imagemin-pngquant": "^4.1.2"
+  }
+}

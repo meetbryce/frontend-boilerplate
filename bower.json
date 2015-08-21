@@ -1,0 +1,20 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "0.1.0",
+  "authors": [
+    "Bryce York <bryce@meetbryce.com>"
+  ],
+  "license": "LicenseRef-LICENSE",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3"
+  }
+}
