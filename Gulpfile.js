@@ -5,6 +5,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 var imagemin = require('gulp-imagemin');
+var notify = require('gulp-notify');
+var plumber = require('gulp-plumber');
 var pngquant = require('imagemin-pngquant');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
@@ -12,14 +14,29 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 
 var dist = "./dist";
+var errorHandlerFactory = function (taskName) {
+    return function (err) {
+        notify.onError({
+            title: "Gulp Error: " + taskName,
+            message: "<%= error.message %>",
+            sound: "Beep"
+        })(err);
+
+        this.emit('end');
+    };
+};
+
 
 gulp.task('html', function () {
-    gulp.src('./**/*.htm')
+    return gulp.src('./**/*.htm')
         .pipe(connect.reload());
 });
 
 gulp.task('images', function () {
-    gulp.src('./src/img/*')
+    var onError = errorHandlerFactory('images');
+
+    return gulp.src('./src/img/*')
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(imagemin({
             use: [pngquant()]
         }))
@@ -27,7 +44,10 @@ gulp.task('images', function () {
 });
 
 gulp.task('scripts', function () {
-    gulp.src('./src/js/app.js')
+    var onError = errorHandlerFactory('scripts');
+
+    return gulp.src('./src/js/app.js')
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
         //.pipe(gulp.dest('./dist/js')) uncomment to create an un-minified version
@@ -39,7 +59,10 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('styles', function () {
-    gulp.src('./src/scss/style.scss')
+    var onError = errorHandlerFactory('styles');
+
+    return gulp.src('./src/scss/style.scss')
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(autoprefixer())
