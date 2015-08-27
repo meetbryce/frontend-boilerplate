@@ -61,7 +61,7 @@ gulp.task('scripts', function () {
 gulp.task('styles', function () {
     var onError = errorHandlerFactory('styles');
 
-    return gulp.src('./src/scss/style.scss')
+    return gulp.src('./src/scss/*.scss')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
