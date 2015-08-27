@@ -16,7 +16,7 @@
 
 0. Check you have the required dependencies: Node ≥ v0.10 & npm ≥ 2.1.5 `node -v && npm -v`
 1. Clone the project `git clone https://github.com/meetbryce/frontend-boilerplate.git`
-2. Install NodeJS dependencies `npm install --verbose`
+2. Install NodeJS dependencies `npm install -d`
 
 ## Usage
 
