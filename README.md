@@ -14,9 +14,8 @@
 
 ## Installation
 
-1. Clone the project
-2. Ensure you're setup with the appropriate version of NodeJS `nvm install`
-4. Install NodeJS dependencies `npm install`
+1. Clone the project `git clone https://github.com/meetbryce/frontend-boilerplate.git`
+2. Install NodeJS dependencies `npm install`
 
 ## Usage
 
@@ -30,7 +29,7 @@ meetbryce/frontend-boilerplate is released under the MIT license.
 **Would love to know if you've found my repo useful via twitter - [@meetbryce](http://twitter.com/meetbryce)**
 
 
-## Recommended External Tools
+## Recommended External Tools (work in progress)
 
 - [TotalTerminal](http://totalterminal.binaryage.com/) (free) - allows you to access your terminal with a shortcut
 - [TotalFinder](http://totalfinder.binaryage.com/) ($9) - allows you to access your finder with a shortcut, gives you a shortcut to reveal dotfiles, and have folders always appear at the top in list view
