@@ -1,6 +1,6 @@
 {
   "name": "frontend-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "My starting point for all new frontend projects. Out of the box: Gulp (SCSS, JS, Image compression, livereload), Bootstrap, jQuery & Modernizr",
   "repository": "https://github.com/meetbryce/frontend-boilerplate",
   "main": "index.js",
