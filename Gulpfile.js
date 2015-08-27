@@ -80,7 +80,7 @@ gulp.task('watch', function () {
 
 gulp.task('connect', function () {
     return connect.server({
-        root: ['./'],
+        root: [__dirname],
         livereload: true,
         fallback: './index.htm',
         host: '0.0.0.0'
