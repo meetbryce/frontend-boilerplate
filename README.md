@@ -19,14 +19,14 @@
     git clone https://github.com/meetbryce/frontend-boilerplate.git
     ```
 2. Install NodeJS dependencies 
-    ```Shell
+    ```shell
     npm install
     ```
 
 ## Usage
 
 1. Compile files, start watching files, and start dev server 
-   ```Shell
+   ```sh
    npm start
    ```
 2. Open the dev server in your brower [localhost:8080](localhost:8080) also available on the network using ComputerName.local
