@@ -48,3 +48,4 @@ Below is a rough outline of things I want to integrate or consider integrating i
 - [ ] Browserify to better manage JS concatenation and dependencies. Would require removing Bower.
 - [ ] AngularJS, already have my boilerplate for this but still investigating ReactJS (mostly because Google isn't dogfooding Angular)
 - [ ] Testing framework
+- [ ] Support for [Alex](https://github.com/wooorm/alex) in the Gulp workflow
