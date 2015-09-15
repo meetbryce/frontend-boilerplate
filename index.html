@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Frontend-boilerplate by meetbryce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Frontend-boilerplate</h1>
+      <h2 class="project-tagline">Everything I use to get a new project off the ground. Includes complete tooling using Gulp (SCSS, Autoprefixer, JS, img minification &amp; auto refreshing wifi accessible server) and my go-to frameworks (BS3 + jQuery + Modernizr)</h2>
+      <a href="https://github.com/meetbryce/frontend-boilerplate" class="btn">View on GitHub</a>
+      <a href="https://github.com/meetbryce/frontend-boilerplate/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/meetbryce/frontend-boilerplate/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="readme" class="anchor" href="#readme" aria-hidden="true"><span class="octicon octicon-link"></span></a>README</h1>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>HTML5 templated index.htm</li>
+<li>Latest stable releases wired in (using Bower): Twitter Bootstrap 3, jQuery, Modernizr</li>
+<li>Gulp setup with the following setup:
+
+<ul>
+<li>SCSS compiling using libsass (including autoprefixer)</li>
+<li>Javascript minification and ready-to-enable concat</li>
+<li>Image optimisation using imagemin</li>
+<li>Auto-refreshing dev server using gulp-connect</li>
+<li>OS-level notification of errors &amp; config so that the watcher continues running</li>
+</ul>
+</li>
+<li>Gitignore file setup for NodeJS, Python, and Webstorm</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>Check you have the required dependencies: Node ≥ v0.10 &amp; npm ≥ 2.1.5 <code>node -v &amp;&amp; npm -v</code>
+</li>
+<li>Clone the project <code>git clone https://github.com/meetbryce/frontend-boilerplate.git</code>
+</li>
+<li>Install NodeJS dependencies <code>npm install -d</code>
+</li>
+</ol>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li>Compile files, start watching files, and start dev server <code>npm start</code>
+</li>
+<li>Open the dev server in your brower <code>localhost:8080</code> also available on the network using <code>ComputerName.local:8080</code>
+</li>
+</ol>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>meetbryce/frontend-boilerplate is released under the MIT license.</p>
+
+<p><strong>Would love to know if you've found my repo useful via twitter - <a href="http://twitter.com/meetbryce">@meetbryce</a></strong></p>
+
+<h2>
+<a id="recommended-external-tools-work-in-progress" class="anchor" href="#recommended-external-tools-work-in-progress" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recommended External Tools (work in progress)</h2>
+
+<ul>
+<li>
+<a href="http://totalterminal.binaryage.com/">TotalTerminal</a> (free) - allows you to access your terminal with a shortcut</li>
+<li>
+<a href="http://totalfinder.binaryage.com/">TotalFinder</a> ($9) - allows you to access your finder with a shortcut, gives you a shortcut to reveal dotfiles, and have folders always appear at the top in list view</li>
+<li>
+<a href="https://itunes.apple.com/us/app/clipboard-history/id420939835?mt=12">ClipboardHistory</a> ($4.99) - keeps a history of your clipboard with an easy to use interface and a shortcut for converting rich text to plain text</li>
+<li>
+<a href="https://www.sublimetext.com/3">Sublime Text 3</a> (free beta) - used ST for 3 years or more and love it.</li>
+<li>
+<a href="https://www.jetbrains.com/webstorm/">Jetbrains Webstorm</a> ($49) - fully-fledged IDE, I've only been using it for about a week but I'm really liking it already.</li>
+</ul>
+
+<h2>
+<a id="future-plans" class="anchor" href="#future-plans" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future Plans</h2>
+
+<p>Below is a rough outline of things I want to integrate or consider integrating into this repo.</p>
+
+<ul>
+<li>[x] <code>npm-shrinkwrap</code> rather than clunky <code>nvm</code>
+</li>
+<li>[ ] ESLint/JSCS config file rather than just managing this in Webstorm </li>
+<li>[ ] Browserify to better manage JS concatenation and dependencies. Would require removing Bower.</li>
+<li>[ ] AngularJS, already have my boilerplate for this but still investigating ReactJS (mostly because Google isn't dogfooding Angular)</li>
+<li>[ ] Testing framework</li>
+<li>[ ] Support for <a href="https://github.com/wooorm/alex">Alex</a> in the Gulp workflow</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/meetbryce/frontend-boilerplate">Frontend-boilerplate</a> is maintained by <a href="https://github.com/meetbryce">meetbryce</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
